@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="large-12 columns">
+		<h1>{{shot.title}}</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="large-6 columns">
+		<img src="{{shot.image_400_url}}" />
+		<ul class="meta inline-list">
+			<li>By {{shot.player.name}}</li>
+			<li><i class="fa fa-comment"></i> {{shot.comments_count}} </li>
+			<li><i class="fa fa-reply"></i> {{shot.rebounds_count}}</li>
+			<li><i class="fa fa-eye"></i> {{shot.views_count}}</li>
+		</ul>
+	</div>
+	<div class="large-6 columns">
+		<h2>Comments</h2>
+		<ul>
+		{{#each comments.comments}}
+			<li>
+				<strong>{{player.name}}</strong>
+				{{{body}}}
+			</li>
+		{{/each}}
+		</ul>
+	</div>
+</div>

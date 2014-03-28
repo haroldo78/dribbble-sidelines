@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    SCREEN.CSS
+\*------------------------------------*/
+
+
+
+
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "mixins";  // Custom mixins
+@import "assets/bower_components/foundation/scss/foundation";
+@import "font-awesome/font-awesome";
+
+
+
+/**
+ * She’s all yours, cap’n... Begin importing your stuff here.
+ */
+@import "ui/scaffolding";
+@import "ui/typography";
+@import "ui/color";
+@import "ui/header";
+@import "ui/navs";
+@import "ui/forms";
+@import "ui/buttons";
+@import "ui/footer";
+@import "ui/helpers";
+
+body{
+	background: #444;
+}
+
+header{
+	margin-bottom: 20px;
+}
+#loader{
+	font-size: 50px;
+	text-align: center;
+	margin: 50px 0;
+}
+#myModal{
+	height: auto;
+	max-width: 1024px;
+}
+nav h1{
+  padding-left: 10px;
+  color: #fff;
+}
+h2{
+	font-size: 1.2rem;
+}
+.meta{
+	margin: 5px 0;
+}
+.meta i{ display: inline; }
+.shot-info-wrapper{
+	img, ul{
+		margin: 0 auto;
+		display: block;
+	}
+	img{
+		margin: 10px auto;
+	}
+}
+#shot-comments{
+	h2{ border-bottom: 1px solid #ddd; }
+}
+.comment-list-wrap{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 305px;
+	ul{
+		list-style: none;
+		padding-right: 10px;
+		li{
+			border-top: 1px solid #ddd;
+			padding: 10px 5px;
+			line-height: 0.9rem;
+			&:first-child{
+				border-top: none;
+			}
+			.avatar-wrap{
+				padding-left: 0;
+			}
+			.comment-player-name{
+				font-size: 0.8rem;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 5px;
+			}
+			p{
+				font-size: 0.8rem;
+				margin-bottom: 0px;
+				line-height: 0.9rem;
+			}
+		}
+	}
+}
+
+.shot-wrapper{
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #fff;
+	overflow:hidden;
+	img{
+		border: 1px solid #ccc;
+	}
+}

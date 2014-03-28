@@ -1,0 +1,22 @@
+<div class="shot-info-wrapper">
+	{{#if shot.image_400_url}}
+		<img src="{{shot.image_400_url}}" />
+	{{else}}
+		<img src="{{shot.image_url}}" />
+	{{/if}}
+	<ul class="meta inline-list">
+		<li class="player">{{shot.player.name}}</li>
+		<li class="comment-count">
+			<i class="fa fa-comment"></i> {{shot.comments_count}}
+		</li>
+		<li class="rebound-count">
+			<i class="fa fa-reply"></i> {{shot.rebounds_count}}
+		</li>
+		<li class="view-count">
+			<i class="fa fa-eye"></i> {{shot.views_count}}
+		</li>
+		<li class="like-count">
+			<i class="fa fa-heart"></i> {{shot.likes_count}}
+		</li>
+	</ul>
+</div>
